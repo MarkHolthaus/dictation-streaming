@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template. __REPO__ is this checkout and __HOME__ your home folder. launchd/install.sh fills them in. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>local.dictation.engine</string>
+  <key>ProgramArguments</key>
+  <array><string>__REPO__/run_engine.sh</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ProcessType</key><string>Interactive</string>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/dictation-engine.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/dictation-engine.log</string>
+</dict>
+</plist>

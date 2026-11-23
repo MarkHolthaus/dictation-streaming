@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template. __REPO__ is this checkout and __HOME__ your home folder. launchd/install.sh fills them in. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>local.dictation.nightly</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__REPO__/.venv/bin/python</string>
+    <string>__REPO__/tagger/nightly.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>__REPO__</string>
+  <key>EnvironmentVariables</key>
+  <dict><key>HF_HOME</key><string>__REPO__/.models/hf</string><key>HF_HUB_OFFLINE</key><string>1</string></dict>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>3</integer><key>Minute</key><integer>30</integer></dict>
+  <key>LowPriorityIO</key><true/>
+  <key>Nice</key><integer>10</integer>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/dictation-nightly.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/dictation-nightly.log</string>
+</dict>
+</plist>

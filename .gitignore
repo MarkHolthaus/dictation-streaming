@@ -1,0 +1,22 @@
+.venv/
+.models/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Everything under data/ stays out: personal messages, recordings, transcripts and the files
+# engine/setup_data.py builds. Never commit it.
+data/
+build/
+.build/
+*.wav
+*.aiff
+*.m4a
+*.mp3
+*.onnx
+*.safetensors
+*.log
+.env
+.DS_Store
+.claude/
+CLAUDE.md
+AGENTS.md

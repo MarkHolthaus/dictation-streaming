@@ -1,0 +1,37 @@
+# Real-word confusion sets for autocorrect layer 3 (context check).
+# One set per line, space separated, lower case. A word may sit in more than one set;
+# its candidates are the union. Layer 3 only ever swaps a word for another word in its sets.
+# Not here on purpose: wont/won't (the typo map already sends wont -> won't, and won't -> wont
+# is never wanted). Also lets/let's: it caught 7 swaps in the eval, and its risk is undoing
+# a correct "Let's" mid-message ("ok Let's" -> "Lets").
+there their they're
+your you're
+its it's
+then than
+to too
+lose loose
+affect effect
+form from
+were where we're
+whose who's
+accept except
+quiet quite
+weather whether
+of off
+past passed
+peace piece
+hear here
+week weak
+new knew
+by buy
+well we'll
+though thought
+through threw
+chose choose
+lead led
+are our
+advice advise
+breath breathe
+principal principle
+complement compliment
+desert dessert
