@@ -98,7 +98,7 @@ The layer 3 checks skip without the context model. `tagger/test_tagger.py` is a 
 
 ## Built with AI help
 
-Much of the code was written with Claude Code, with me setting the design and checking the results.
+Developed alongside agentic coding agents, with me setting the design and checking the results.
 
 ## License
 
